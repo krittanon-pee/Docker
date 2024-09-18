@@ -1,0 +1,35 @@
+docker run <image>
+docker run hello-world
+docker run busybox echo 'hello world in docker'
+docker run busybox ls
+docker run nginx
+docker ps //ดูการทำงานทั้งหมด
+docker ps --all
+docker run busybox ping google.com
+docker stop <Container id>
+docker remove <Container id>
+docker pull 
+docker create
+docker start
+docker start -a show ค่า
+docker rm
+docker system prune ลบทั้งหมด #ไม่ควรรัน
+docker exec <Container-id> ls
+docker exec -it <Container> sh //เข้าไปใน Container
+docker exec -it <Container> bash เข้ามาใน Container เป็น root
+docker run --name mynginx -d -p 3000:80 nginx
+docker logs 3455e29907c383fca9925d1babe97340d3edb3b3fcc1c92a8598910a86256773
+docker logs -f  3455e29907c383fca9925d1babe97340d3edb3b3fcc1c92a8598910a86256773
+cd usr/share/nginx/html/
+ls
+cat index.html //ส่องในไฟล์
+pwd 
+exit
+docker run -p 80:80 nginx
+docker run -p 9000:80 nginx
+docker system info
+docker system df
+docker images
+docker image rm 
+docker image inspect  nginx ดูโครงสร้าง
+cls เคลียร์หน้าจอ
